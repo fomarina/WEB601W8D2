@@ -8,11 +8,12 @@
     </head>
 <body>
 
-   <div id = "databinding">
-      <div>
+   <div id = "databinding" >
+      <div v-bind:style = "styleobj" onmouseover="changebgcolor()" onmouseout="originalcolor()">
+
       </div>
    </div>
-   
+
    <script>
 
       var vm = new Vue({
@@ -36,8 +37,8 @@
             }
          },
       });
-   
+
    </script>
-    
+
 </body>
 </html>

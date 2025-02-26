@@ -11,6 +11,7 @@
 
     <div id="demo">
         <button v-on:click = "">Click</button>
+
     </div>
 
 <script>
@@ -19,8 +20,11 @@
         el: "#demo",
         data: { a: 5 }
     })
-    
+    vm.$watch('a', function (newVal, oldVal) {
+        console.log('a changed from ' + oldVal + ' to ' + newVal);
+    });
+
 </script>
-    
+
 </body>
 </html>
